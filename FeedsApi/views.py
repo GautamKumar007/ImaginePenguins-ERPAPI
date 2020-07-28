@@ -9,7 +9,7 @@ from rest_framework import status
 import requests
 
 from .serializer import FeedSerializer
-from ERPAPI.models import User
+from UserApi.models import User
 from . models import Feed, Feed_Like, Feed_Tag, Comment, Comments_Comment, Comments_Like, Tag
 
 # Create your views here.

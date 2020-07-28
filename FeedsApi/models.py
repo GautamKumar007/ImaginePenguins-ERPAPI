@@ -1,5 +1,5 @@
 from django.db import models
-from ERPAPI.models import User
+from UserApi.models import User
 from django.utils import timezone
 # Create your models here.
 

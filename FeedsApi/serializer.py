@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ERPAPI.models import User
+from UserApi.models import User
 from .models import Feed
 
 class FeedSerializer(serializers.ModelSerializer):
