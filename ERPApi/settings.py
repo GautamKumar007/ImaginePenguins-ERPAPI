@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['192.168.0.106','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'ERPAPI',
+    'UserApi',
     'FeedsApi',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,7 +52,7 @@ REST_FRAMEWORK = {
     ]
 }
 
-AUTH_USER_MODEL = 'ERPAPI.User'
+AUTH_USER_MODEL = 'UserApi.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -64,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'UserApi.urls'
+ROOT_URLCONF = 'ERPApi.urls'
 
 TEMPLATES = [
     {
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'UserApi.wsgi.application'
+WSGI_APPLICATION = 'ERPApi.wsgi.application'
 
 
 # Database
@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'UserApi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'UserApi',
+        'NAME': 'imagine-penguins-erpdb',
         'USER': 'root',
         'PASSWORD':'',
         'HOST': 'localhost',

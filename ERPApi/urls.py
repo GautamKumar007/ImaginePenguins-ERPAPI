@@ -19,7 +19,7 @@ from FeedsApi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('ERPAPI.urls')),
+    path('', include('UserApi.urls')),
     path('api/erpapi/v1/feed', views.Feedlist.as_view()),
     path('api/erpapi/v1/feed/<int:pk>', views.Feeditem.as_view()),
 ]
